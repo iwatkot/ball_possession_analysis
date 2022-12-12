@@ -29,7 +29,7 @@ for frame in frame_data:
             # Fetching coordinates of the ball.
             ball_x1, ball_x2 = detection['x1'], detection['x2']
             ball_y1, ball_y2 = detection['y1'], detection['y2']
-            continue
+    for i, detection in enumerate(detections):
         if detection['name'] == 'person':
             # Fetching coordinates of the player.
             person_x1, person_x2 = detection['x1'], detection['x2']
